@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Olimpia</title>
+    <link href="/CSS/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4625d5dccd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+                <a class="header__container__logo" href="./index.html">
+                    <h1>OLIMPIA</h1>
+                </a>
+                <nav class="header__container__nav">
+                    <ul class="header__container__nav__ul">
+                        <a href="../index.html">HOME</a>
+                        <a href="/pages/nosotros.html">NOSOTROS</a>
+                        <a href="/pages/tienda.html">TIENDA</a>
+                        <a href="/pages/cronograma.html">CRONOGRAMA</a>
+                        <a href="/pages/contacto.html">CONTACTO</a>
+                    </ul>
+                </nav>
+
+        </div>
+    </header>
+
+    <main class="main__pagcont"> 
+        <section>
+            <h1 class="main__pagcont__h1">CONTACTO</h1>
+            <div class="main__pagcont__contacto">
+                <ul class="main__pagcont__contacto__ul">
+                    <li><i class="fa-solid fa-location-dot"></i><span class="">Alvear 2900 <br> Santa Fe, Argentina</span></li>
+                    <li><i class="fa-solid fa-phone"></i>+54 3497 406804</li>
+                    <li><i class="fa-solid fa-envelope"></i>facusartori03@gmail.com</li>
+                    <li><i class="fa-solid fa-clock"></i>Lun a Vie 07:00 a 20:00hs</li>
+                </ul>
+            </div>
+            
+            <iframe class="main__pagcont__iframe" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d857.6824120149554!2d-61.04872717074581!3d-30.697881845675795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDQxJzUyLjQiUyA2McKwMDInNTMuNSJX!5e0!3m2!1ses-419!2sar!4v1681242415034!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <h2 class="main__pagcont__h2">
+               ¡ESCRIBINOS!
+            </h2>
+            <form class="main__pagcont__form" method="POST" name="consultas">
+                <div class="row">
+                    <input type="text" name="nombre" class="contact_form_detail" required placeholder=" Nombre y Apellido*">
+                
+                    <input type="tel" name="telefono" class="contact_form_detail" required placeholder=" Teléfono*">
+                
+                    <input type="email" name="email" class="contact_form_detail" required placeholder=" Email*">
+                </div>
+                <textarea name="mensaje" class="contact_form_detail1" required placeholder=" Mensaje*"></textarea>
+              
+                <div class="submit_btn_box">
+                  <input type="submit" name="submit" class="submit_btn" value="ENVIAR" >
+                </div>
+              
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <nav class="footer__container__nav">
+            <ul class="footer__container__nav__ul">
+                <a href="../index.html">HOME</a>
+                <a href="/pages/nosotros.html">NOSOTROS</a>
+                <a href="/pages/tienda.html">TIENDA</a>
+                <a href="/pages/cronograma.html">CRONOGRAMA</a>
+                <a href="/pages/contacto.html">CONTACTO</a>
+            </ul>
+        </nav>
+            
+        <h2 class="footer__container__h2">REDES Y CONTACTO</h2>
+        <div class="footer__container__social">
+            <a href="" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+        
+        <p id="copy">&copy; 2023 OLIMPIA. ALL RIGHTS RESERVED</p>
+    </footer>
+    
+</body>
+</html>
