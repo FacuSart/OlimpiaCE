@@ -118,8 +118,13 @@ html{
     display:block;
     text-align: center;
     padding:3vh 0vh;
+    color: white;
+    margin: 0;
 }
-
+.footer__container__nav__ul{
+    margin:0;
+    padding:0;
+}
 .footer__container__h2{
     font-size: 2rem;
     color: white;
@@ -143,11 +148,6 @@ html{
 
 .footer i:hover{
    color: green;
-}
-#copy{
-   text-align: center;
-   color: white;
-   margin: 0;
 }
 
 
@@ -247,7 +247,7 @@ html{
 
 
 /* ---------------------------Tienda-------------------------- */
-.main__tienda__container{
+.main__tienda{
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.7),
@@ -261,43 +261,50 @@ html{
     width: 100%;
     height: auto;
     padding-bottom: 100px;
+    padding-top: 10vh;
 }
-
-
 .main__tienda__container{
     display: flex;
-    padding-top: 10vh;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}  
-.main__tienda__container h1{
+    margin: auto;
+}
+.main__tienda__navbar{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+.main__tienda__navbar h1{
     color: white;
-    position: absolute;
-    font-size: 3vw;
+    font-size: 3rem;
     text-decoration: underline;
+    padding-bottom: 2vh;
 }
 
 .main__tienda__container__producto{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 14vh 1vw 0vh 1vw;
+    margin: 1vw;
     width: 20vw;
     height: 40vh;
     border-radius: 10px;
 }
-
+.main__tienda__container__producto:hover{
+    box-shadow: 0px 0px 10px 3px  rgba(207, 207, 207, 0.37);
+    
+    z-index: 99;
+}
 .main__tienda__container__producto__info{
-    width: 20vw;
-    height: 40vh;
+    height: 100%;
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .main__tienda__container__producto__info:hover{
-    width: 20vw;
-    height: 40vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 10px 3px  rgba(207, 207, 207, 0.37);
     opacity: 1;
     border-radius: 10px;
 }
@@ -312,9 +319,8 @@ html{
 }
 
 
-.main__tienda__container__producto__info button{
-    margin: auto;
-    margin-top: 12vh;
+.main__tienda__container__producto button{
+    margin: 0 auto;
     display: flex;
     background-color: transparent;
     border: solid 1px white;
@@ -328,7 +334,7 @@ html{
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
 }
-.main__tienda__container__producto__info button:hover{
+.main__tienda__container__producto button:hover{
     color: black;
     background-color: white;
     cursor: pointer;
@@ -593,46 +599,36 @@ iframe{
 
     /* ---------------------------TIENDA-------------------------- */
     
-    .main__tienda__container{
-        padding-bottom: 150px;
-        background-image: linear-gradient(
+    .main__tienda{
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
         ),
     url("/assets/Images/bg_tienda2.jpg");
-    
     background-position: center;
     background-repeat: repeat;
     background-size: auto ;
+    padding: 5vh 0;
     }
-    .main__tienda__container h1{
+    .main__tienda__navbar h1{
         color: white;
-        position: absolute;
-        content: "";
-        font-size: 5vw;
-        margin-top: 70px;
+        font-size: 2rem;
+        padding-bottom: 2vh;
     }
     .main__tienda__container__producto{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width:50vw;
-        margin: 15vh 10vw; 
+        width:auto;
+        margin: 7.5vh; 
 
     }
-    .main__tienda__container__producto__info, .main__tienda__container__producto__info:hover{
-        width: 50vw;
-        height: 40vh;
+    .main__tienda__container__producto__info{
         opacity: 1;
-        
-    }
-    .main__tienda__container__producto__info h2{
-        background-color: var(--bg-color1);
     }
 
     .main__tienda__container__producto__info button{
-        margin-top: 32vh;
         width: auto;
     }
 
