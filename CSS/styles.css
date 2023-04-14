@@ -26,22 +26,24 @@ html{
     align-items: center;
 }
 
-.header__container__logo, .header__container__nav, .header__container__nav__ul a{
+.header__container__logo h1,  .header__container__nav__ul, a {
     color: white;
     text-decoration: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-.header__container__logo:hover{
+.header__container__logo h1:hover{
     color: green;
 }
 .header__container__nav__ul a{
     margin: 20px;
-    text-decoration: none;
 }
 
 .header__container__nav__ul a:hover{
     text-decoration: underline 2px green;
+    color:white;
 }
 
 .main{
