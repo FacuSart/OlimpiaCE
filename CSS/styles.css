@@ -13,39 +13,13 @@ html{
 
 }
 
-
-.header__container{
-    z-index: 99;
-    width: 100%;
-    height: 8vh;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: space-between;
-    padding: 0 3.5vw ;
-    align-items: center;
+#logo:hover{
+    color: green !important;
+    cursor: pointer !important;
 }
-
-.header__container__logo h1,  .header__container__nav__ul, a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+#unite:hover{
+    background-color: green !important;
 }
-
-.header__container__logo h1:hover{
-    color: green;
-}
-.header__container__nav__ul a{
-    margin: 20px;
-}
-
-.header__container__nav__ul a:hover{
-    text-decoration: underline 2px green;
-    color:white;
-}
-
 .main{
     width: 100%;
     min-height: 100vh;
@@ -99,8 +73,6 @@ html{
 }
 
 .footer{
-    width: 100%;
-    height: auto;
     border-top: 2px solid black;
     background:linear-gradient(
         0deg,
@@ -258,17 +230,12 @@ html{
     background-position: center;
     background-repeat: repeat;
     background-size: auto;
-    width: 100%;
-    height: auto;
-    padding-bottom: 100px;
-    padding-top: 10vh;
 }
 
 .main__tienda__navbar{
     width: 100%;
     height: auto;
     text-align: center;
-    padding-bottom: 3vh;
 }
 
 .main__tienda__container__producto{
@@ -281,8 +248,6 @@ html{
 }
 .main__tienda__container__producto:hover{
     box-shadow: 0px 0px 10px 3px  rgba(207, 207, 207, 0.37);
-    
-    z-index: 99;
 }
 .main__tienda__container__producto__info{
     height: 100%;
@@ -525,7 +490,6 @@ iframe{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
         height: 100%;
     }
     
@@ -596,12 +560,12 @@ iframe{
     background-position: center;
     background-repeat: repeat;
     background-size: auto ;
-    padding: 5vh 0;
+
     }
     .main__tienda__navbar h1{
         color: white;
         font-size: 2rem;
-        padding-bottom: 2vh;
+
     }
     .main__tienda__container__producto{
         display: flex;

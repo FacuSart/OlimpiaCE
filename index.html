@@ -11,30 +11,43 @@
     <link  href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-                <a class="header__container__logo" href="./index.html">
-                    <h1>OLIMPIA</h1>
-                </a>
-                <nav class="header__container__nav">
-                    <ul class="header__container__nav__ul">
-                        <a href="/index.html">HOME</a>
-                        <a href="./pages/nosotros.html">NOSOTROS</a>
-                        <a href="./pages/tienda.html">TIENDA</a>
-                        <a href="./pages/cronograma.html">CRONOGRAMA</a>
-                        <a href="./pages/contacto.html">CONTACTO</a>
-                    </ul>
-                </nav>
-
-        </div>
+    <header class="w-100 bg-black position-fixed px-2 d-flex bg-opacity-50" style="z-index:2">
+        <nav class="navbar navbar-expand-lg navbar-dark w-100">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-1" href="/index.html" id="logo">OLIMPIA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="container-fluid">  
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fs-5 text-center">
+                  <li class="nav-item m-2">
+                    <a class="nav-link" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item m-2">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item m-2">
+                    <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item m-2">
+                      <a class="nav-link " href="./pages/cronograma.html">Cronograma</a>
+                    </li>
+                <li class="nav-item m-2">
+                  <a class="nav-link " href="./pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main class="main">
            
             <div class="main__container">
                 <h1 class="main__container__titulo1">OLIMPIA</h1>
                 <h2 class="main__container__titulo2">Entrena con los mejores</h2>
-                
-                <a href="../pages/contacto.html"> <button class="main__container__button" style="cursor: pointer;" id="unite" >¡UNITE!</button> </a>
+                <a class="btn btn-primary bg-transparent w-25 fs-2 my-5 border-light px-0" href="./pages/contacto.html" role="button" id="unite">¡UNITE!</a>
             </div>
 
        
