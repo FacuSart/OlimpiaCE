@@ -263,31 +263,18 @@ html{
     padding-bottom: 100px;
     padding-top: 10vh;
 }
-.main__tienda__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: auto;
-}
+
 .main__tienda__navbar{
     width: 100%;
     height: auto;
     text-align: center;
     padding-bottom: 3vh;
 }
-.main__tienda__navbar h1{
-    color: white;
-    font-size: 3rem;
-    text-decoration: underline;
-    padding-bottom: 2vh;
-}
 
 .main__tienda__container__producto{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 1vw;
     width: 20vw;
     height: 40vh;
     border-radius: 10px;
