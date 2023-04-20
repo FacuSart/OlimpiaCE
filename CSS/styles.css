@@ -327,13 +327,10 @@ iframe{
     height: auto;
 }
 .main__pagcont__h1{
-    text-align: center;
     padding-top: 10vh;
     font-size: 3rem;
-    text-decoration: underline;
 }
 .main__pagcont__h2{
-    text-align: center;
     padding-top: 5vh;
     font-size: 3rem;
 }
@@ -344,24 +341,6 @@ iframe{
     margin-top: 5vh;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-}
-
-.main__pagcont__contacto__ul{
-    display: flex;
-    list-style:none;
-    align-items: center;
-    height: 100%;
-    font-weight: bold;
-    justify-content: space-around;
-}
-
-.main__pagcont__contacto__ul i{
-    align-items: center;
-    margin-right:10px ;
-}
-
-iframe{
-    height: 50vh;
 }
 
 .main__pagcont__form{
@@ -383,10 +362,6 @@ iframe{
     border: 1px solid grey;
     border-radius: 5px;
     margin: 3vw;
-}
-.row{
-    display: flex;
-    flex-direction: row;
 }
 
 .contact_form_detail1{

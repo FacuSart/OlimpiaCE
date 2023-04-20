@@ -44,30 +44,38 @@
 
     <main class="main__pagcont"> 
         <section>
-            <h1 class="main__pagcont__h1">CONTACTO</h1>
+            <h1 class="main__pagcont__h1 text-center text-decoration-underline">CONTACTO</h1>
             <div class="main__pagcont__contacto">
-                <ul class="main__pagcont__contacto__ul">
-                    <li><i class="fa-solid fa-location-dot"></i><span class="">Alvear 2900 <br> Santa Fe, Argentina</span></li>
-                    <li><i class="fa-solid fa-phone"></i>+54 3497 406804</li>
-                    <li><i class="fa-solid fa-envelope"></i>facusartori03@gmail.com</li>
-                    <li><i class="fa-solid fa-clock"></i>Lun a Vie 07:00 a 20:00hs</li>
+                <ul class="d-flex list-unstyled align-items-center justify-content-around h-100 fw-bold">
+                    <li><i class="fa-solid fa-location-dot align-items-center mx-2"></i><span class="">Alvear 2900 <br> Santa Fe, Argentina</span></li>
+                    <li><i class="fa-solid fa-phone align-items-center mx-2"></i>+54 3497 406804</li>
+                    <li><i class="fa-solid fa-envelope align-items-center mx-2"></i>facusartori03@gmail.com</li>
+                    <li><i class="fa-solid fa-clock align-items-center mx-2"></i>Lun a Vie 07:00 a 20:00hs</li>
                 </ul>
             </div>
             
-            <iframe class="main__pagcont__iframe" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d857.6824120149554!2d-61.04872717074581!3d-30.697881845675795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDQxJzUyLjQiUyA2McKwMDInNTMuNSJX!5e0!3m2!1ses-419!2sar!4v1681242415034!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="main__pagcont__iframe vh-75" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d857.6824120149554!2d-61.04872717074581!3d-30.697881845675795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDQxJzUyLjQiUyA2McKwMDInNTMuNSJX!5e0!3m2!1ses-419!2sar!4v1681242415034!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
-            <h2 class="main__pagcont__h2">
+            <h2 class="main__pagcont__h2 text-center text-decoration-underline">
                ¡ESCRIBINOS!
             </h2>
             <form class="main__pagcont__form" method="POST" name="consultas">
                 <div class="row">
+                  <div class="col-4">
                     <input type="text" name="nombre" class="contact_form_detail" required placeholder=" Nombre y Apellido*">
-                
+                  </div>
+                  <div class="col-4">
                     <input type="tel" name="telefono" class="contact_form_detail" required placeholder=" Teléfono*">
-                
+                  </div>
+                  <div class="col-4">
                     <input type="email" name="email" class="contact_form_detail" required placeholder=" Email*">
+                  </div>
                 </div>
-                <textarea name="mensaje" class="contact_form_detail1" required placeholder=" Mensaje*"></textarea>
+                <div class="row">
+                  <div class="col-12">
+                    <textarea name="mensaje" class="contact_form_detail1" required placeholder=" Mensaje*"></textarea>
+                  </div>
+                </div>
               
                 <div class="submit_btn_box">
                   <input type="submit" name="submit" class="submit_btn" value="ENVIAR" >
