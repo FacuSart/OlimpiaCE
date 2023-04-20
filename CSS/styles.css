@@ -151,16 +151,6 @@ html{
 .img__nos{
     box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
 }
-.main__nos__home__h1{
-    font-size: 4rem;
-    font-weight: bold;
-    margin:10px;
-}
-.main__nos__home__h2{
-    font-size: 2rem;
-    font-weight: lighter;
-    margin:10px;
-}
 
 .main__nos__home__p{
     font-size: 1.25rem;
@@ -419,7 +409,7 @@ iframe{
     border-radius: 20px;
     cursor: pointer;
 }
-@media screen and (min-width:0px) and (max-width:768px){
+@media screen and (min-width:0px) and (max-width:992px){
     
     .header__container{
         position: static;
@@ -483,6 +473,9 @@ iframe{
     .img__nos{
         display: none;
     }
+    .carousel-inner{
+        justify-content: center;
+    }
     .main__nos__home__container p{
         font-size: 4vw;
         text-align: center;
@@ -495,14 +488,7 @@ iframe{
     .main__nos__home2__h1{
         font-size: 11vw;
     }
-    .main__nos__home__media2{
-        flex-direction: column;
-    }
-    .main__nos__home__media2 img, video{
-        width: 80vw;
-        margin: 40px;
-        height: auto;
-    }
+   
 
     /* ---------------------------TIENDA-------------------------- */
     
