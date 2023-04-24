@@ -152,6 +152,74 @@ iframe {
   width: 5% !important;
 }
 
+.padding-top {
+  padding-top: 15vh;
+}
+
+.main__pagcont__contacto {
+  height: 22vh;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.contact_form_detail {
+  font-family: "poppins";
+  font-size: 1.25rem;
+  width: 15vw;
+  height: 5vh;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 3vw;
+}
+
+.contact_form_detail1 {
+  font-family: "poppins";
+  font-size: 1.25rem;
+  width: 57vw;
+  height: 5vh;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 3vw;
+  height: 20vh;
+}
+
+.submit_btn {
+  width: 10vw;
+  height: 5vh;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .main__pagcont__contacto {
+    height: auto;
+    margin: auto;
+    border: none;
+  }
+  .main__pagcont__contacto ul {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  .main__pagcont__contacto ul li {
+    border-bottom: 2px solid black;
+  }
+  .main__pagcont__contacto ul li:last-child {
+    border-bottom: none;
+  }
+  .contact_form_detail {
+    width: 60vw !important;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .submit_btn {
+    width: 20vw !important;
+  }
+}
 .footer {
   border-top: 2px solid black;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/Images/footer.jpg");
