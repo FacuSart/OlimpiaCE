@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "poppins", serif !important;
+}
+
+#logo:hover {
+  color: green !important;
+  cursor: pointer !important;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background: linear-gradient(0deg, rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("/assets/Images/main1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .main__container {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 30vh;
+}
+.main .main__container #unite:hover {
+  background-color: green !important;
+}
+.main .main__container .main__container__titulo1 {
+  margin: 10px;
+  font-size: 7rem;
+  color: white;
+}
+.main .main__container .main__container__titulo2 {
+  margin: 10px;
+  font-size: 3.5rem;
+  color: white;
+}
+.main .main__container .main__container__button {
+  width: 10vw;
+  height: 5vh;
+  border-radius: 10px;
+  border: solid 1px white;
+  margin: 7vh auto;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  border: none;
+  height: 75vh;
+  margin: 30px 0px;
+}
+
+.main__crono {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+.main__crono .main__crono__titulos {
+  padding-top: 11vh;
+  text-align: center;
+}
+.main__crono .main__crono__titulos .main__crono__titulos__h1 {
+  font-size: 4rem;
+}
+.main__crono .main__crono__titulos .main__crono__titulos__h2 {
+  font-size: 2rem;
+}
+
+.main__crono__grid {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 7vh repeat(3, auto);
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 75%;
+  height: 100vh;
+  background-color: transparent;
+  margin: auto;
+}
+.main__crono__grid .main__crono__grid__negro {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+.main__crono__grid .main__crono__grid__info {
+  background-color: rgba(179, 179, 179, 0.411);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+}
+
+.main__nos__home {
+  background-image: linear-gradient(0deg, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.8)), url("/assets/Images/main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__nos__home .img__nos {
+  box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+}
+.main__nos__home .main__nos__home__p {
+  font-size: 1.25rem;
+}
+
+.main__nos__home2 {
+  background: linear-gradient(0deg, rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.8)), url("/assets/Images/main2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: auto;
+  border-top: 2px solid black;
+}
+.main__nos__home2 .main__nos__home2__h1 {
+  color: white;
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 100px;
+  margin-top: 60px;
+  letter-spacing: 1px;
+}
+.main__nos__home2 .carousel {
+  max-height: 80vh;
+  height: auto;
+}
+.main__nos__home2 .carousel .carousel-inner {
+  height: auto;
+  border-radius: 10px;
+}
+.main__nos__home2 .carousel .carousel-control-prev, .main__nos__home2 .carousel .carousel-control-next {
+  width: 5% !important;
+}
+
+.footer {
+  border-top: 2px solid black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/Images/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+}
+.footer .footer__style {
+  display: block;
+  text-align: center;
+  padding: 3vh 0vh;
+  color: white;
+  margin: 0;
+}
+.footer .footer__h2 {
+  font-size: 2rem;
+  color: white;
+}
+.footer .footer__social a {
+  font-size: 2.5rem;
+  margin-top: 50px;
+  text-decoration: none;
+  color: white;
+  margin: 25px;
+}
+.footer .footer__social a:hover {
+  color: green;
+}
+.footer .footer__nav a {
+  text-decoration: none;
+  color: white;
+  margin: 25px;
+  font-size: 1rem;
+}
+.footer .footer__nav a:hover {
+  text-decoration: underline 2px green;
+}
+
+/*# sourceMappingURL=estilos.css.map */
