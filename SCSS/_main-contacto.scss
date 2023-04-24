@@ -40,15 +40,14 @@
 
 
 @media screen and (min-width:0px) and (max-width:768px){
-    .main__pagcont__contacto{        
-        height: auto;
+    .main__pagcont__contacto{    
         margin: auto;
-        border: none;
         ul{
             display: flex;
             flex-direction: column;
             font-weight: bold;
             li{
+                
                 border-bottom: 2px solid black;
                 &:last-child{
                     border-bottom: none;

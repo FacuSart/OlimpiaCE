@@ -20,23 +20,27 @@
         font-size: 2rem;
         color: white;
     }
-    .footer__social a{
-        font-size: 2.5rem;
-        margin-top: 50px;
-        text-decoration: none;
-        color: white;
-        margin: 25px;
-        &:hover{
-            color: green;
+    .footer__social {
+        a{
+            font-size: 2.5rem;
+            margin-top: 50px;
+            text-decoration: none;
+            color: white;
+            margin: 25px;
+            &:hover{
+                color: green;
+            }
         }
-    }
-    .footer__nav a{
-        text-decoration: none;
-        color: white;
-        margin: 25px;
-        font-size: 1rem;
-        &:hover{
-            text-decoration: underline 2px green;
+    }    
+    .footer__nav {
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 25px;
+            font-size: 1rem;
+            &:hover{
+                text-decoration: underline 2px green;
+            }
         }
     }
 }
