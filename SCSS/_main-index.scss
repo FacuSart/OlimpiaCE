@@ -1,43 +1,36 @@
 .main{
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
     background:linear-gradient(
         0deg,
         rgba(32, 32, 32, 0.5),
         rgba(32, 32, 32, 0.5)
         ),url("/assets/Images/main1.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        .main__container{
-            text-align: center;
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top:30vh;
-            #unite{
-                &:hover{background-color: green !important;}
-            }
-            .main__container__titulo1{
-                margin: 10px;
-                font-size: 7rem;
-                color:white;
-            }
-            .main__container__titulo2{
-                margin: 10px;
-                font-size: 3.5rem;
-                color:white;
-            }
-            .main__container__button{
-                width: 10vw;
-                height: 5vh;
-                border-radius: 10px;
-                border: solid 1px white;
-                margin: 7vh auto;
-                background-color: transparent  ;
-                color: white;
-                font-size: 1.5rem;
-            }
-        }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+        font-size: 6rem;
+    }
+    h2{
+        font-size: 3.5rem;
+    }
+    #unite{
+        &:hover{background-color: green !important;}
+    }
+    .main__container__button{
+        width: 10vw;
+        height: 5vh;
+        border-radius: 10px;
+        border: solid 1px white;
+        margin: 7vh auto;
+        background-color: transparent  ;
+        color: white;
+        font-size: 1.5rem;
+    }
+        
+}
+@media screen and (min-width:0px) and (max-width:768px){
+    #unite{
+        width: 50vw !important;
+    }
 }

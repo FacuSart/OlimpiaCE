@@ -381,7 +381,7 @@ iframe{
     border-radius: 20px;
     cursor: pointer;
 }
-@media screen and (min-width:0px) and (max-width:992px){
+@media screen and (min-width:0px) and (max-width:768px){
     
     .header__container{
         position: static;
