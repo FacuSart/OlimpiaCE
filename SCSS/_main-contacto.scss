@@ -1,4 +1,6 @@
-
+.iframe__contacto{
+    height: 75vh;
+}
 .padding-top{
     padding-top: 15vh;
 }
@@ -47,7 +49,6 @@
             flex-direction: column;
             font-weight: bold;
             li{
-                
                 border-bottom: 2px solid black;
                 &:last-child{
                     border-bottom: none;
