@@ -1,10 +1,11 @@
+@import "variables.scss";
 @import "fonts.scss";
 @import "reset.scss";
-@import "body.scss";
 @import "header.scss";
-@import "main-index.scss";
-@import "main-cronograma.scss";
-@import "main-nosotros.scss";
-@import "main-contacto.scss";
-@import "main-tienda.scss";
+@import "mainindex.scss";
+@import "maincronograma.scss";
+@import "mainnosotros.scss";
+@import "maincontacto.scss";
+@import "maintienda.scss";
 @import "footer.scss";
+@import "mediaQ.scss";

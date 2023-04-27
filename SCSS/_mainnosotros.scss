@@ -8,21 +8,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    .img-nos{
-        width:30vw;
-        box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
-    }
-    
-    .main__nos__home__p{
-        font-size: 1.25rem;
+    div{
+        .img__nos{
+            width:30vw;
+            box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+        }
     }
 }
 
 .main__nos__home2{
     h1{
         margin-top: 5vh;
-        font-size: 4rem;
+
     }
     background: linear-gradient(
         0deg,
@@ -45,19 +42,5 @@
         .carousel-control-prev, .carousel-control-next{
             width: 5% !important;
         }
-    }
-}
-@media screen and (min-width:0px) and (max-width:768px){
-    .img__nos{
-        display: none;
-    }
-    
-    .main__nos__home2{
-        max-height: 100vh;
-        height: auto;
-    }
-
-    .main__nos__home2__h1{
-        font-size: 11vw;
     }
 }

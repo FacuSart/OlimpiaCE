@@ -15,10 +15,17 @@
         padding:3vh 0vh;
         color: white;
         margin: 0;
-    }
-    .footer__h2{
-        font-size: 2rem;
-        color: white;
+        .footer__nav {
+            a{
+                text-decoration: none;
+                color: $white;
+                margin: 25px;
+                font-size: 1rem;
+                &:hover{
+                    text-decoration: underline 2px green;
+                }
+            }
+        }
     }
     .footer__social {
         a{
@@ -32,15 +39,5 @@
             }
         }
     }    
-    .footer__nav {
-        a{
-            text-decoration: none;
-            color: white;
-            margin: 25px;
-            font-size: 1rem;
-            &:hover{
-                text-decoration: underline 2px green;
-            }
-        }
-    }
+    
 }

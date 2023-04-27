@@ -1,0 +1,50 @@
+.padding-top{
+    padding-top: 15vh;
+}
+.main__pagcont__contacto{
+    height: 22vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.iframe__contacto{
+    height: 75vh;
+}
+form{
+    .row{
+        .col-4{
+            .contact_form_detail{
+                font-family: 'poppins';
+                font-size: 1.25rem;
+                width: 15vw;
+                height: 5vh;
+                border: 1px solid grey;
+                border-radius: 5px;
+                margin: 3vw;
+            }
+        }
+        .col-12{
+            .contact_form_detail1{
+                font-size: 1.25rem;
+                border: 1px solid grey;
+                border-radius: 5px;
+                height: 20vh;
+            }   
+        }
+    }
+    .submit_btn{
+        width: 10vw;
+        height: 5vh;
+        border: none;
+        background-color: green;
+        color: $white;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover{
+            background-color: $white;
+            color: green;
+            border: 1px solid green;
+        }
+    }
+    
+}
+    
