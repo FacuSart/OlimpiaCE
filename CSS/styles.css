@@ -32,7 +32,7 @@ html{
         0deg,
         rgba(32, 32, 32, 0.5),
         rgba(32, 32, 32, 0.5)
-        ),url("/assets/Images/main3.jpg");
+        ),url("../assets/Images/main3.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -66,7 +66,7 @@ html{
         0deg,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
-        ),url("/assets/Images/footer.jpg");
+        ),url("../assets/Images/footer.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
