@@ -6,18 +6,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+header{
+    z-index: 2;
+}
 html{
     scroll-behavior: smooth;
     font-family: 'poppins', serif;
 }
 
 #logo:hover{
-    color: green !important;
-    cursor: pointer !important;
+    color: green;
+    cursor: pointer;
+}
+#unite{
+    background-color: transparent;
 }
 #unite:hover{
-    background-color: green !important;
+    background-color: green;
 }
 .main{
     width: 100%;
@@ -27,7 +32,7 @@ html{
         0deg,
         rgba(32, 32, 32, 0.5),
         rgba(32, 32, 32, 0.5)
-        ),url("/assets/Images/main1.jpg");
+        ),url("/assets/Images/main3.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -41,34 +46,18 @@ html{
     top:30vh;
 }
 
-.main__container__titulo1{
+.main__container h1{
     font-size: 7rem;
     margin: 10px;
 }
 
-.main__container__titulo2{
+.main__container h2{
     margin: 10px;
     font-size: 3.5rem;
 }
 
-.main__container__titulo1, .main__container__titulo2{
+.main__container h1, .main__container h2{
     color:white;
-}
-
-.main__container__button{
-    width: 10vw;
-    height: 5vh;
-    border-radius: 10px;
-    border: solid 1px white;
-    margin: 7vh auto;
-    background-color: transparent  ;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.main__container__button:hover{
-    background-color: green;
-    transition: 0.35s;
 }
 
 .footer{
@@ -129,7 +118,7 @@ html{
         rgba(32, 32, 32, 0.8),
         rgba(32, 32, 32, 0.8)
         ),
-        url("/assets/Images/main.jpg");
+        url("../assets/Images/main.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -146,7 +135,7 @@ html{
 }
 
 .carousel-control-prev, .carousel-control-next{
-    width: 5% !important;
+    width: 5%;
 }
 .img__nos{
     box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
@@ -162,11 +151,10 @@ html{
         rgba(32, 32, 32, 0.8),
         rgba(32, 32, 32, 0.8)
         ),
-        url("/assets/Images/main2.jpg");
+        url("../assets/Images/main2.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    min-height: 100vh;
     height: auto;
     border-top:  2px solid black;;
 }
@@ -180,7 +168,7 @@ html{
     letter-spacing: 1px;
 }
 
-
+ 
 
 
 
@@ -192,7 +180,7 @@ html{
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
         ),
-    url("/assets/Images/bg_tienda2.jpg");
+    url("../assets/Images/bg_tienda2.jpg");
     ;
     background-position: center;
     background-repeat: repeat;
@@ -205,61 +193,15 @@ html{
     text-align: center;
 }
 
-.main__tienda__container__producto{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 20vw;
-    height: 40vh;
+.border-radius{
     border-radius: 10px;
 }
-.main__tienda__container__producto:hover{
-    box-shadow: 0px 0px 10px 3px  rgba(207, 207, 207, 0.37);
-}
-.main__tienda__container__producto__info{
-    height: 100%;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.main__tienda__container__producto__info:hover{
-    opacity: 1;
-    border-radius: 10px;
-}
-.main__tienda__container__producto__info h2{
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin: 0;
-    padding: 20px 0px;
-    text-decoration: underline;
-    text-align: center;
-}
-
-
-.main__tienda__container__producto button{
-    margin: 0 auto;
-    display: flex;
+.button__tienda{
     background-color: transparent;
-    border: solid 1px white;
-    border-radius: 10px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    width: 12vw;
-    height: 7vh;
-    font-size: 1.3rem;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
 }
-.main__tienda__container__producto button:hover{
-    color: black;
-    background-color: white;
-    cursor: pointer;
+.button__tienda:hover{
+    background-color: green;
 }
-
-
 /* ---------------------------CRONOGRAMA-------------------------- */
 
 iframe{
@@ -384,33 +326,7 @@ iframe{
     border-radius: 20px;
     cursor: pointer;
 }
-@media screen and (min-width:0px) and (max-width:992px){
-    
-    .header__container{
-        position: static;
-        width: 100%;
-        background-color: black;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        height: auto;    
-        padding: 0;
-    }
-    .header__container__logo h1{
-        font-size: 2.5rem;
-    }
-
-    .subrayado{
-        padding:0;
-    }
-    .animacion:hover{
-        letter-spacing: 0;
-    }
-
-    .main{
-        background-position: 65%;
-    }
-
+@media screen and (min-width:0px) and (max-width:768px){
     .main__container h1{
         font-size: 5rem;
         color:white;
@@ -427,7 +343,7 @@ iframe{
             rgba(32, 32, 32, 0.5),
             rgba(32, 32, 32, 0.5)
             ),
-        url("/assets/Images/footer1.jpg");
+        url("../assets/Images/footer1.jpg");
 
         background-position: center;
         background-size: cover;
@@ -448,20 +364,17 @@ iframe{
     .img__nos{
         display: none;
     }
-    .carousel-inner{
-        justify-content: center;
-    }
     .main__nos__home__container p{
         font-size: 4vw;
         text-align: center;
     }
-    .main__nos__home2{
-        max-height: 100vh;
-        height: auto;
+    .main__nos__home2 .carousel-inner{
+        display: none;  
     }
 
     .main__nos__home2__h1{
         font-size: 11vw;
+        margin: 20px;
     }
    
 
@@ -473,40 +386,23 @@ iframe{
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
         ),
-    url("/assets/Images/bg_tienda2.jpg");
+    url("../assets/Images/bg_tienda2.jpg");
     background-position: center;
     background-repeat: repeat;
     background-size: auto ;
-
     }
     .main__tienda__navbar h1{
         color: white;
         font-size: 2rem;
 
     }
-    .main__tienda__container__producto{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width:auto;
-        margin: 7.5vh; 
-
-    }
-    .main__tienda__container__producto__info{
-        opacity: 1;
-    }
-
-    .main__tienda__container__producto__info button{
-        width: auto;
-    }
+    
 
     /* ---------------------------CRONOGRAMA-------------------------- */
     iframe{
-        margin-top: 10vh;
-        height: 50vh;
+        margin-top: 10vh;   
     }
     .main__crono__grid{
-        
         width: 75%;
         height: auto;
     } 
@@ -525,16 +421,14 @@ iframe{
 
 
     .main__pagcont__contacto{
-        width: 75%;
         height: auto;
         margin: auto;
-        border: none;
         padding-top: 10px;
     }
     .main__pagcont__h1{
         padding: 5vh 0;
     }
-    .main__pagcont__contacto__ul{
+    .main__pagcont__contacto ul{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
