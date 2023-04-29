@@ -20,14 +20,14 @@ html{
 }
 #unite{
     background-color: transparent;
+    width: 25vw;
 }
 #unite:hover{
     background-color: green;
 }
 .main{
     width: 100%;
-    min-height: 100vh;
-    height: auto;
+    height: 100vh;
     background:linear-gradient(
         0deg,
         rgba(32, 32, 32, 0.5),
@@ -41,9 +41,6 @@ html{
 .main__container{
     text-align: center;
     width: 100%;
-    height: auto;
-    position: absolute;
-    top:30vh;
 }
 
 .main__container h1{
@@ -213,18 +210,18 @@ iframe{
     margin: 30px 0px;
 }
 .main__crono{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
 .main__crono__titulos{
-    padding-top: 11vh;
+    padding-top: 10vh;
     text-align: center;
 }
 
 .main__crono__titulos__h1{
-    font-size: 4rem;
+    font-size: 5rem;
 }
 .main__crono__titulos__h2{
     font-size: 2rem;
@@ -327,16 +324,21 @@ iframe{
     cursor: pointer;
 }
 @media screen and (min-width:0px) and (max-width:768px){
+    .main{
+        height: 75vh;
+    }
     .main__container h1{
-        font-size: 5rem;
+        font-size: 3rem;
         color:white;
         margin: 0;
     }
     .main__container h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
     }
-
+    #unite {
+        width: auto;
+    }
     .footer__container{
         background-image:linear-gradient(
             0deg,
@@ -400,21 +402,25 @@ iframe{
 
     /* ---------------------------CRONOGRAMA-------------------------- */
     iframe{
-        margin-top: 10vh;   
+        margin-top: 10vh;  
+        height: 40vh;
     }
+    .main__crono{
+        height:auto;
+    } 
     .main__crono__grid{
         width: 75%;
         height: auto;
     } 
     .main__crono__titulos{
-        padding-top: 16vh;
+        padding-top: 10vh;
         text-align: center;
     }
     .main__crono__titulos__h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .main__crono__titulos__h2{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     /* ---------------------------CONTACTO-------------------------- */
