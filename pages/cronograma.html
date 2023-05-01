@@ -1,61 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cronograma Olimpia</title>
-    <link href="/CSS/styles.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4625d5dccd.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="header">
-        <div class="header__container">
-                <a class="header__container__logo" href="./index.html">
-                    <h1>OLIMPIA</h1>
-                </a>
-                <nav class="header__container__nav">
-                    <ul class="header__container__nav__ul">
-                        <a href="../index.html">HOME</a>
-                        <a href="/pages/nosotros.html">NOSOTROS</a>
-                        <a href="/pages/tienda.html">TIENDA</a>
-                        <a href="/pages/cronograma.html">CRONOGRAMA</a>
-                        <a href="/pages/contacto.html">CONTACTO</a>
-                    </ul>
-                </nav>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="../CSS/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/4625d5dccd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header
+      class="w-100 bg-black position-fixed px-2 d-flex"
+    >
+      <nav class="navbar navbar-expand-lg navbar-dark w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="../index.html" id="logo"
+            >OLIMPIA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
+        <div class="container-fluid">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav fs-5 text-center">
+              <li class="nav-item m-2">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item m-2">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item m-2">
+                <a class="nav-link" href="./tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item m-2">
+                <a class="nav-link" href="./cronograma.html">Cronograma</a>
+              </li>
+              <li class="nav-item m-2">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="main__crono">
-        <section class="main__crono__titulos">
-            <h1 class="main__crono__titulos__h1">CRONOGRAMA</h1>
-            <h2 class="main__crono__titulos__h2">CONOCÉ NUESTRAS ACTIVIDADES Y HORARIOS</h2>
-        </section>
-        <iframe src="/crono_grid.html"> </iframe>
-        
+      <section class="main__crono__titulos">
+        <h1 class="main__crono__titulos__h1">CRONOGRAMA</h1>
+        <h2 class="main__crono__titulos__h2">
+          CONOCÉ NUESTRAS ACTIVIDADES Y HORARIOS
+        </h2>
+      </section>
+      <iframe src="../crono_grid.html"> </iframe>
     </main>
-    
+
     <footer class="footer">
-        <nav class="footer__container__nav">
-            <ul class="footer__container__nav__ul">
-                <a href="../index.html">HOME</a>
-                <a href="/pages/nosotros.html">NOSOTROS</a>
-                <a href="/pages/tienda.html">TIENDA</a>
-                <a href="/pages/cronograma.html">CRONOGRAMA</a>
-                <a href="/pages/contacto.html">CONTACTO</a>
-            </ul>
-        </nav>
-            
-        <h2 class="footer__container__h2">REDES Y CONTACTO</h2>
-        <div class="footer__container__social">
-            <a href="" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
-        </div>
-        
-        <p id="copy">&copy; 2023 OLIMPIA. ALL RIGHTS RESERVED</p>
+      <nav class="footer__container__nav">
+        <ul class="footer__container__nav__ul">
+          <a href="../index.html">HOME</a>
+          <a href="../pages/nosotros.html">NOSOTROS</a>
+          <a href="../pages/tienda.html">TIENDA</a>
+          <a href="../pages/cronograma.html">CRONOGRAMA</a>
+          <a href="../pages/contacto.html">CONTACTO</a>
+        </ul>
+      </nav>
+
+      <h2 class="footer__container__h2">REDES Y CONTACTO</h2>
+      <div class="footer__container__social">
+        <a href="" target="_blank"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="" target="_blank"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="" target="_blank"
+          ><i class="fa-brands fa-square-whatsapp"></i
+        ></a>
+      </div>
+
+      <p id="copy">&copy; 2023 OLIMPIA. ALL RIGHTS RESERVED</p>
     </footer>
-    
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
