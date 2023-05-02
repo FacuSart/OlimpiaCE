@@ -3,48 +3,75 @@
 }
 .main__pagcont__contacto{
     height: 22vh;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid map-get($colors, black);
+    border-bottom: 2px solid map-get($colors, black);
 }
 .iframe__contacto{
     height: 75vh;
 }
 form{
     .row{
-        .col-4{
+        div{
             .contact_form_detail{
-                font-family: 'poppins';
                 font-size: 1.25rem;
-                width: 15vw;
                 height: 5vh;
-                border: 1px solid grey;
+                @include border(1px, solid, grey);
                 border-radius: 5px;
-                margin: 3vw;
+                margin: 1rem;
             }
         }
-        .col-12{
+        div{
             .contact_form_detail1{
                 font-size: 1.25rem;
-                border: 1px solid grey;
+                @include border(1px, solid, grey);
                 border-radius: 5px;
-                height: 20vh;
+                width: map-get($tamanos, 75vw);
+                height: map-get($tamanos, 20vh );
             }   
         }
+        
     }
     .submit_btn{
-        width: 10vw;
+        width: map-get($tamanos, 20vh );
         height: 5vh;
         border: none;
-        background-color: green;
+        background-color: map-get($colors, green1);
         color: $white;
-        border-radius: 20px;
+        border-radius: 10px;
         cursor: pointer;
         &:hover{
-            background-color: $white;
-            color: green;
-            border: 1px solid green;
+            background-color: map-get($colors, white1);
+            color: map-get($colors, green1);
+            @include border(1px, solid, green);
+        }
+    } 
+}  
+@media screen and (min-width:0px) and (max-width:768px){
+    
+    .main__pagcont__contacto{    
+        margin: auto;
+        ul{
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            li{
+                border-bottom: 2px solid black;
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
         }
     }
-    
+    form{
+        .row{
+            .col-4{
+                .contact_form_detail{
+                    width: 60vw;
+                }
+            }
+        }
+        .submit_btn{
+            width: map-get($tamanos, 20vw);
+        }
+    }  
 }
-    

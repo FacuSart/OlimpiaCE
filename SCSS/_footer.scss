@@ -1,28 +1,55 @@
 .footer{
-    border-top: 2px solid black;
+    border-top: 2px solid map-get($colors, black1);
     background:linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
         ),url("/assets/Images/footer.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+        @include background(center,no-repeat,cover);
     padding-top: 30px;
     .footer__style{
         display:block;
         text-align: center;
         padding:3vh 0vh;
-        color: white;
+        color: map-get($colors, white1);
         margin: 0;
         .footer__nav {
+            li{
+                list-style: none;
+            }
             a{
                 text-decoration: none;
-                color: $white;
+                color: map-get($colors, white1);
                 margin: 25px;
                 font-size: 1rem;
-                &:hover{
-                    text-decoration: underline 2px green;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: map-get($colors, white1);                    transform: scaleX(0);      
+                    transform-origin: left;  
+                    transition: transform 0.5s;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: map-get($colors, white1);                    transform: scaleX(0);      
+                    transform-origin: right;  
+                    transition: transform 0.5s;
+                }
+                &:hover::before{
+                    transform: scaleX(1);
+                }
+                &:hover::after{
+                    transform: scaleX(1);
                 }
             }
         }
@@ -32,10 +59,11 @@
             font-size: 2.5rem;
             margin-top: 50px;
             text-decoration: none;
-            color: white;
+            color: map-get($colors, white1);
             margin: 25px;
+            transition: color 0.25s linear;
             &:hover{
-                color: green;
+                color: map-get($colors, green1);
             }
         }
     }    

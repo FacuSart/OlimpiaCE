@@ -4,58 +4,41 @@
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
         ),
-    url("/assets/Images/bg_tienda2.jpg");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: auto;
-    section{
-        .main__tienda__container{
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 20vw;
-            height: 40vh;
-            border-radius: 10px;
-            &:hover{
-                box-shadow: 0px 0px 10px 3px  rgba(207, 207, 207, 0.37);
-            }
-            button{
-                border: solid 1px white;
-                border-radius: 10px;
-                color: white;
-                justify-content: center;
-                align-items: center;
-                width: 12vw;
-                height: 7vh;
-                font-size: 1.3rem;
-                font-weight: bold;
-                font-family: 'Poppins', sans-serif;
-                &:hover{
-                    color: black;
-                    background-color: white !important;
+    url("../assets/Images/bg_tienda2.jpg");
+    ;
+    @include background(center,repeat,auto);
+    .main__tienda__navbar{
+        height: auto;
+        text-align: center;
+    }
+    .conteiner-fluid{
+        div{
+            div{
+                img{
+                    filter: drop-shadow(0px 0px 4px black);
+                    &:hover{
+                        transition: 0.5s;
+                        filter: drop-shadow(0px 0px 6px white); 
+                    }
+                }
+                
+               .conteiner{
+                    .border-radius{
+                        border-radius: 10px;
+                    }
+                    .button__tienda{
+                        background-color: transparent;
+                    }
+                    .button__tienda:hover{
+                        transition: 0.5s;
+                        background-color: map-get($colors, green1)
+                    }
                 }
             }
         }
-        .main__tienda__container__producto{
-            height: 100%;
-            opacity: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            &:hover{
-                opacity: 1;
-                border-radius: 10px;
-            }
-            h2{
-                display: flex;
-                justify-content: center;
-                color: white;
-                margin: 0;
-                padding: 20px 0px;
-                text-decoration: underline;
-                text-align: center;
-            }
-            
-        }
     }
+        
 }
+
+
+
