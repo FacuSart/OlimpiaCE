@@ -53,17 +53,17 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 .main div #unite::before {
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(4, 163, 4);
   z-index: -1;
-  transform: scaleY(0);
+  transform: scaleX(0);
   transition: transform 0.5s;
 }
 .main div #unite:hover::before {
-  transform: scaleY(1);
+  transform: scaleX(1);
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -72,6 +72,9 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
   }
   .main div #unite {
     width: 50vw;
+  }
+  .main div #unite::before {
+    display: none;
   }
 }
 .section__crono h1 {
@@ -204,6 +207,7 @@ form .row div .contact_form_detail {
   border: 1px solid grey;
   border-radius: 5px;
   margin: 1rem;
+  width: 20vw;
 }
 form .row div .contact_form_detail1 {
   font-size: 1.25rem;
@@ -286,13 +290,16 @@ form .submit_btn:hover {
   padding-top: 30px;
 }
 .footer .footer__style {
-  display: block;
   text-align: center;
   padding: 3vh 0vh;
   color: rgb(255, 255, 255);
   margin: 0;
 }
+.footer .footer__style .footer__nav {
+  margin: 0;
+}
 .footer .footer__style .footer__nav li {
+  margin: 10px;
   list-style: none;
 }
 .footer .footer__style .footer__nav a {

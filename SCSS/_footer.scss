@@ -8,13 +8,14 @@
         @include background(center,no-repeat,cover);
     padding-top: 30px;
     .footer__style{
-        display:block;
         text-align: center;
         padding:3vh 0vh;
         color: map-get($colors, white1);
         margin: 0;
         .footer__nav {
+            margin: 0;
             li{
+                margin: 10px;
                 list-style: none;
             }
             a{
