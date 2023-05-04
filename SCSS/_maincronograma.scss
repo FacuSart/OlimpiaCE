@@ -21,8 +21,8 @@
     margin: auto;
     .main__crono__grid__negro{
         background-color: map-get($colors, black1);
-        color: map-get($colors, white);
-        display: $flex;
+        color: map-get($colors, white1);
+        display: flex;
         justify-content:  map-get($justify, center);
         align-items: map-get($align, center);
         width: 200px;  

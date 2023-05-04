@@ -4,7 +4,7 @@
     rgba(32, 32, 32, 0.8),
     rgba(32, 32, 32, 0.8)
     ),
-    url("/assets/Images/main.jpg");
+    url("../assets/Images/main.jpg");
     @include background(center,no-repeat,cover);
     div{
         .img__nos{
@@ -23,7 +23,7 @@
         rgba(32, 32, 32, 0.8),
         rgba(32, 32, 32, 0.8)
         ),
-        url("/assets/Images/main2.jpg");
+        url("../assets/Images/main2.jpg");
         @include background(center,no-repeat,cover);
     height: auto;
     border-top:  2px solid map-get($colors, black1);
