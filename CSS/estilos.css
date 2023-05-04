@@ -132,15 +132,15 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main__nos .div1 {
+.main__nos .div_1 {
   height: 90vh;
 }
-.main__nos .div1 .img__nos {
+.main__nos .div_1 .img__nos {
   width: 30vw;
   box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
 }
-.main__nos .div2 {
-  height: 60vh;
+.main__nos .div_2 {
+  height: 50vh;
 }
 
 .main__nos2 {
@@ -170,11 +170,14 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .main__nos .div1 {
+  .main__nos .div_1 {
     padding: 0;
   }
-  .main__nos .div1 .img__nos {
+  .main__nos .div_1 .img__nos {
     display: none;
+  }
+  .main__nos .div_2 {
+    height: auto;
   }
   .main__nos2 {
     height: auto;
