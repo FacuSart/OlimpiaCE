@@ -6,6 +6,10 @@
   font-family: "poppins", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   z-index: 2;
 }
@@ -128,9 +132,15 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main__nos div .img__nos {
+.main__nos .div1 {
+  height: 100vh;
+}
+.main__nos .div1 .img__nos {
   width: 30vw;
   box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+}
+.main__nos .div2 {
+  height: 60vh;
 }
 
 .main__nos2 {
@@ -160,7 +170,10 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .main__nos div .img__nos {
+  .main__nos .div1 {
+    padding: 0;
+  }
+  .main__nos .div1 .img__nos {
     display: none;
   }
   .main__nos2 {

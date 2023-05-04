@@ -6,12 +6,17 @@
     ),
     url("../assets/Images/main.jpg");
     @include background(center,no-repeat,cover);
-    div{
+    .div1{
+        height: 100vh;
         .img__nos{
             width:30vw;
             box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
         }
     }
+    .div2{
+        height: 60vh;
+    }
+    
 }
 
 .main__nos2{
@@ -45,7 +50,8 @@
 
 @media screen and (min-width:0px) and (max-width:768px){
     .main__nos{
-        div{
+        .div1{
+            padding: 0;
             .img__nos{
                 display: none;
             }
