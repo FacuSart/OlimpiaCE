@@ -36,7 +36,7 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 }
 
 .main {
-  background: linear-gradient(to top, rgba(32, 32, 32, 0.65), rgba(32, 32, 32, 0.65)), url("/assets/Images/main3.jpg");
+  background: linear-gradient(to top, rgba(32, 32, 32, 0.65), rgba(32, 32, 32, 0.65)), url("../assets/Images/main3.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,7 +283,7 @@ form .submit_btn:hover {
 
 .footer {
   border-top: 2px solid black;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/Images/footer.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/Images/footer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

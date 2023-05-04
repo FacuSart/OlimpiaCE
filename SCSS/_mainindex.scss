@@ -1,5 +1,5 @@
 .main{
-    background:linear-gradient(to top,rgba(32, 32, 32, 0.65),rgba(32, 32, 32, 0.65)),url("/assets/Images/main3.jpg");
+    background:linear-gradient(to top,rgba(32, 32, 32, 0.65),rgba(32, 32, 32, 0.65)),url("../assets/Images/main3.jpg");
     @include background(top,no-repeat,cover);
     
     div{
