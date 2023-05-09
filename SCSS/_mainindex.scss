@@ -11,6 +11,11 @@
         }
         #unite{
             background-color: map-get($colors, transparent1);
+            border-radius: 10px;
+            a{
+                text-decoration: none;
+                color: map-get($colors, white1 );
+            }
             &::before{
                 content: "";
                 position: absolute;
@@ -22,6 +27,7 @@
                 z-index: -1;
                 transform: scaleX(0);        
                 transition: transform 0.5s;
+                border-radius: 10px;
             }
             &:hover::before{
                 transform: scaleX(1);

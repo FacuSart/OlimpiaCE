@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +24,7 @@ html {
 header {
   z-index: 2;
   position: fixed;
+  box-shadow: 0px 0px 5px white;
 }
 header .navbar .container-fluid #logo {
   color: rgb(255, 255, 255);
@@ -54,6 +66,11 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 }
 .main div #unite {
   background-color: transparent;
+  border-radius: 10px;
+}
+.main div #unite a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 .main div #unite::before {
   content: "";
@@ -66,6 +83,7 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
   z-index: -1;
   transform: scaleX(0);
   transition: transform 0.5s;
+  border-radius: 10px;
 }
 .main div #unite:hover::before {
   transform: scaleX(1);
