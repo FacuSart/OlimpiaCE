@@ -1,5 +1,5 @@
-.main{
-    background:linear-gradient(to top,rgba(32, 32, 32, 0.65),rgba(32, 32, 32, 0.65)),url("../assets/Images/main3.jpg");
+.main__index{
+    background:linear-gradient(to top,rgba(32, 32, 32, 0.75),rgba(32, 32, 32, 0.75)),url("../assets/Images/main3.jpg");
     @include background(top,no-repeat,cover);
     
     div{
@@ -10,11 +10,13 @@
             font-size: 3.5rem;
         }
         #unite{
+            box-shadow: 0 0 5px map-get($colors, green1);
             background-color: map-get($colors, transparent1);
             border-radius: 10px;
+            border: none;
             a{
                 text-decoration: none;
-                color: map-get($colors, white1 );
+                color: map-get($colors, white1);
             }
             &::before{
                 content: "";

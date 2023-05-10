@@ -24,7 +24,6 @@ html {
 header {
   z-index: 2;
   position: fixed;
-  box-shadow: 0px 0px 5px white;
 }
 header .navbar .container-fluid #logo {
   color: rgb(255, 255, 255);
@@ -52,27 +51,29 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
   transform: scaleX(1);
 }
 
-.main {
-  background: linear-gradient(to top, rgba(32, 32, 32, 0.65), rgba(32, 32, 32, 0.65)), url("../assets/Images/main3.jpg");
+.main__index {
+  background: linear-gradient(to top, rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75)), url("../assets/Images/main3.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main div h1 {
+.main__index div h1 {
   font-size: 6rem;
 }
-.main div h2 {
+.main__index div h2 {
   font-size: 3.5rem;
 }
-.main div #unite {
+.main__index div #unite {
+  box-shadow: 0 0 5px rgb(4, 163, 4);
   background-color: transparent;
   border-radius: 10px;
+  border: none;
 }
-.main div #unite a {
+.main__index div #unite a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-.main div #unite::before {
+.main__index div #unite::before {
   content: "";
   position: absolute;
   right: 0;
@@ -85,7 +86,7 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
   transition: transform 0.5s;
   border-radius: 10px;
 }
-.main div #unite:hover::before {
+.main__index div #unite:hover::before {
   transform: scaleX(1);
 }
 
@@ -150,7 +151,7 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 10vh;
+  padding: 10vh 0;
 }
 .main__nos .div_1 {
   height: 80vh;
@@ -160,10 +161,11 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 }
 .main__nos .div_1 .img__nos {
   width: 30vw;
-  box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  border-radius: 5px;
 }
 .main__nos .div_2 {
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .main__nos2 {
@@ -195,9 +197,6 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .main__nos {
     padding-top: 15vh;
-  }
-  .main__nos .div_1 {
-    margin-top: 10vh;
   }
   .main__nos .div_1 div {
     margin-left: 0;
@@ -327,6 +326,30 @@ form .submit_btn:hover {
   background-color: rgb(4, 163, 4);
 }
 
+.main__404 {
+  background: linear-gradient(to top, rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("../assets/Images/pesas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__404 div {
+  border-radius: 0 10px 10px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 50px;
+}
+.main__404 div h3 a {
+  color: white;
+}
+.main__404 div h3 a:hover {
+  color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  main div {
+    padding-left: 0;
+    border-radius: 0;
+  }
+}
 .footer {
   border-top: 2px solid black;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/Images/footer.jpg");
