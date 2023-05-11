@@ -331,8 +331,11 @@ form .submit_btn:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  height: auto;
 }
 .main__404 div {
+  margin-top: 10vh;
   border-radius: 0 10px 10px 0;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0 50px;
@@ -345,9 +348,12 @@ form .submit_btn:hover {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  main div {
-    padding-left: 0;
+  .main__404 div {
+    padding: 0;
     border-radius: 0;
+  }
+  .main__404 div h3 a {
+    display: block;
   }
 }
 .footer {

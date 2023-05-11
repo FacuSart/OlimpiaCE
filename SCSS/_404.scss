@@ -1,7 +1,10 @@
 .main__404{
     background:linear-gradient(to top,rgba(32, 32, 32, 0.5),rgba(32, 32, 32, 0.5)),url("../assets/Images/pesas.jpg");
     @include background(center,no-repeat,cover);
+    min-height: 100vh;
+    height: auto;
     div{
+        margin-top:10vh;
         border-radius: 0 10px 10px 0;
         background-color: rgba(0, 0, 0, 0.5);
         padding: 0 50px;
@@ -18,10 +21,15 @@
     
 }
 @media screen and (min-width:0px) and (max-width:768px){
-        main{
+        .main__404{
             div{
-                padding-left: 0;
+                padding: 0;
                 border-radius: 0;
+                h3{
+                    a{
+                        display: block;
+                    }
+                }
             }
         } 
 }     
