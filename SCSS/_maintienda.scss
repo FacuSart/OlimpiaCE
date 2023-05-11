@@ -1,0 +1,44 @@
+.main__tienda{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+        ),
+    url("../assets/Images/bg_tienda2.jpg");
+    ;
+    @include background(center,repeat,auto);
+    .main__tienda__navbar{
+        height: auto;
+        text-align: center;
+    }
+    .conteiner-fluid{
+        div{
+            div{
+                img{
+                    filter: drop-shadow(0px 0px 4px black);
+                    &:hover{
+                        transition: 0.5s;
+                        filter: drop-shadow(0px 0px 6px white); 
+                    }
+                }
+                
+               .conteiner{
+                    .border-radius{
+                        border-radius: 10px;
+                    }
+                    .button__tienda{
+                        background-color: transparent;
+                        transition: background-color 0.20s linear;
+                    }
+                    .button__tienda:hover{
+                        background-color: map-get($colors, green1)
+                    }
+                }
+            }
+        }
+    }
+        
+}
+
+
+

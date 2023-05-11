@@ -1,0 +1,53 @@
+.main__index{
+    background:linear-gradient(to top,rgba(32, 32, 32, 0.75),rgba(32, 32, 32, 0.75)),url("../assets/Images/main3.jpg");
+    @include background(top,no-repeat,cover);
+    
+    div{
+        h1{
+            font-size: 6rem;
+        }
+        h2{
+            font-size: 3.5rem;
+        }
+        #unite{
+            box-shadow: 0 0 5px map-get($colors, green1);
+            background-color: map-get($colors, transparent1);
+            border-radius: 10px;
+            border: none;
+            a{
+                text-decoration: none;
+                color: map-get($colors, white1);
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: map-get($colors, green1);
+                z-index: -1;
+                transform: scaleX(0);        
+                transition: transform 0.5s;
+                border-radius: 10px;
+            }
+            &:hover::before{
+                transform: scaleX(1);
+            }
+        }
+    }
+        
+}
+@media screen and (min-width:0px) and (max-width:768px){
+    .main{
+        background-position: 45%;
+        div{
+            #unite{
+                width:  map-get($tamanos, 50vw);
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}

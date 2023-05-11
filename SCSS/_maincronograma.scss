@@ -1,0 +1,51 @@
+.section__crono{
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+.iframe__crono{
+    height:  map-get($tamanos, 75vh);
+}
+.main__crono__grid{
+    display: grid;
+    grid-template-columns: repeat(6, auto) ;
+    grid-template-rows: 7vh repeat(3, auto);
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 75%;
+    height: map-get($tamanos, 100vh);
+    background-color: transparent;
+    margin: auto;
+    .main__crono__grid__negro{
+        background-color: map-get($colors, black1);
+        color: map-get($colors, white1);
+        display: flex;
+        justify-content:  map-get($justify, center);
+        align-items: map-get($align, center);
+        width: 200px;  
+    }
+    
+    .main__crono__grid__info{
+        @extend .main__crono__grid__negro;
+        background-color: rgba(179, 179, 179, 0.411);
+        flex-direction: column;
+        text-align: center;
+        color: map-get($colors, black1);
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:768px){
+    .section__crono{
+        h1{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+}
+
+
