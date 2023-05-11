@@ -29,9 +29,13 @@
                     .button__tienda{
                         background-color: transparent;
                         transition: background-color 0.20s linear;
-                    }
-                    .button__tienda:hover{
-                        background-color: map-get($colors, green1)
+                        &:hover{
+                            background-color: map-get($colors, green1)
+                        }
+                        a{
+                            color: $white;
+                            text-decoration: none;
+                        }
                     }
                 }
             }

@@ -325,6 +325,10 @@ form .submit_btn:hover {
 .main__tienda .conteiner-fluid div div .conteiner .button__tienda:hover {
   background-color: rgb(4, 163, 4);
 }
+.main__tienda .conteiner-fluid div div .conteiner .button__tienda a {
+  color: white;
+  text-decoration: none;
+}
 
 .main__404 {
   background: linear-gradient(to top, rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)), url("../assets/Images/pesas.jpg");
