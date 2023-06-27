@@ -1,19 +1,24 @@
 .main__index{
-    background:linear-gradient(to top,rgba(32, 32, 32, 0.75),rgba(32, 32, 32, 0.75)),url("../assets/Images/main3.jpg");
-    @include background(top,no-repeat,cover);
+    background:linear-gradient(to top,rgba(22, 22, 22, 0.85),rgba(22, 22, 22, 0.85)),url("../assets/Images/olimpiaLogo.jpg");
+    @include background(center,no-repeat,cover);
     
     div{
         h1{
             font-size: 6rem;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+            margin-bottom:2rem;
         }
         h2{
             font-size: 3.5rem;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
         }
         #unite{
             box-shadow: 0 0 5px map-get($colors, green1);
             background-color: map-get($colors, transparent1);
             border-radius: 10px;
             border: none;
+            width: 25vw;
+            margin-top: 4rem;
             a{
                 text-decoration: none;
                 color: map-get($colors, white1);
@@ -38,12 +43,15 @@
     }
         
 }
+
 @media screen and (min-width:0px) and (max-width:768px){
-    .main{
+    .main__index{
         background-position: 45%;
+        
         div{
             #unite{
-                width:  map-get($tamanos, 50vw);
+                width: map-get($tamanos, 50vw );
+                
                 &::before{
                     display: none;
                 }

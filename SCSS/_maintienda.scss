@@ -12,6 +12,15 @@
         text-align: center;
     }
     .conteiner-fluid{
+        #prox-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75%;
+            font-size: 4rem;
+            background-color: rgba(0, 0, 0, 0.25);
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+        }
         div{
             div{
                 img{

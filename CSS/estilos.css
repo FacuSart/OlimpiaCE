@@ -52,22 +52,27 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 }
 
 .main__index {
-  background: linear-gradient(to top, rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75)), url("../assets/Images/main3.jpg");
-  background-position: top;
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.85), rgba(22, 22, 22, 0.85)), url("../assets/Images/olimpiaLogo.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .main__index div h1 {
   font-size: 6rem;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  margin-bottom: 2rem;
 }
 .main__index div h2 {
   font-size: 3.5rem;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
 .main__index div #unite {
   box-shadow: 0 0 5px rgb(4, 163, 4);
   background-color: transparent;
   border-radius: 10px;
   border: none;
+  width: 25vw;
+  margin-top: 4rem;
 }
 .main__index div #unite a {
   text-decoration: none;
@@ -91,13 +96,13 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .main {
+  .main__index {
     background-position: 45%;
   }
-  .main div #unite {
+  .main__index div #unite {
     width: 50vw;
   }
-  .main div #unite::before {
+  .main__index div #unite::before {
     display: none;
   }
 }
@@ -307,6 +312,15 @@ form .submit_btn:hover {
 .main__tienda .main__tienda__navbar {
   height: auto;
   text-align: center;
+}
+.main__tienda .conteiner-fluid #prox-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
 .main__tienda .conteiner-fluid div div img {
   filter: drop-shadow(0px 0px 4px black);
