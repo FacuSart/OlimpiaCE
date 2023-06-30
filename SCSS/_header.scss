@@ -5,9 +5,11 @@ header{
         .container-fluid{
             #logo{
                 color: map-get($colors, white1);
-                transition: color 0.25s;
+                transition: text-shadow 0.35s;
+                
                 &:hover{
-                    color: map-get($colors, green1);
+                    // color: map-get($colors, green1);
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
                 }
             }
             #navbarNav{

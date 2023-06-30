@@ -1,13 +1,15 @@
-.section__crono{
-    h1{
-        font-size: 4rem;
+.main__index{
+    .main__crono{
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        .iframe__crono{
+            height:  map-get($tamanos, 75vh);
+        }
     }
-    h2{
-        font-size: 2rem;
-    }
-}
-.iframe__crono{
-    height:  map-get($tamanos, 75vh);
 }
 .main__crono__grid{
     display: grid;
@@ -38,12 +40,16 @@
 }
 
 @media screen and (min-width:0px) and (max-width:768px){
-    .section__crono{
-        h1{
-            font-size: 3rem;
-        }
-        h2{
-            font-size: 2rem;
+    .main__index{
+        .main__crono{
+            h1{
+                font-size: 2.25rem;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            h2{
+                font-size: 1.25rem;
+            }
         }
     }
 }

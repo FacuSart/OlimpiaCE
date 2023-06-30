@@ -1,78 +1,88 @@
-.padding-top{
-    padding-top: 15vh;
-}
-.main__pagcont__contacto{
-    height: 22vh;
-    border-top: 2px solid map-get($colors, black);
-    border-bottom: 2px solid map-get($colors, black);
-}
-.iframe__contacto{
-    height: 75vh;
-}
-form{
-    .row{
-        div{
-            .contact_form_detail{
-                font-size: 1.25rem;
+.main__index{
+    .main__contacto{
+        border-top: 2px solid black;
+        .main__pagcont__contacto{
+            height: 22vh;
+            border-top: 2px solid map-get($colors, black);
+            border-bottom: 2px solid map-get($colors, black);
+        }
+        .iframe__contacto{
+            height: 75vh;
+        }
+        form{
+            .row{
+                div{
+                    .contact_form_detail{
+                        font-size: 1.25rem;
+                        height: 5vh;
+                        @include border(1px, solid, grey);
+                        border-radius: 5px;
+                        margin: 1rem;
+                        width: 20vw;
+                    }
+                }
+                div{
+                    .contact_form_detail1{
+                        font-size: 1.25rem;
+                        @include border(1px, solid, grey);
+                        border-radius: 5px;
+                        width: map-get($tamanos, 75vw);
+                        height: map-get($tamanos, 20vh );
+                    }   
+                }
+                
+            }
+            .submit_btn{
+                width: map-get($tamanos, 20vh );
                 height: 5vh;
-                @include border(1px, solid, grey);
-                border-radius: 5px;
-                margin: 1rem;
-                width: 20vw;
-            }
-        }
-        div{
-            .contact_form_detail1{
-                font-size: 1.25rem;
-                @include border(1px, solid, grey);
-                border-radius: 5px;
-                width: map-get($tamanos, 75vw);
-                height: map-get($tamanos, 20vh );
-            }   
-        }
-        
+                border: none;
+                background-color: map-get($colors, green1);
+                color: $white;
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover{
+                    background-color: map-get($colors, white1);
+                    color: map-get($colors, green1);
+                    @include border(1px, solid, green);
+                }
+            } 
+        } 
     }
-    .submit_btn{
-        width: map-get($tamanos, 20vh );
-        height: 5vh;
-        border: none;
-        background-color: map-get($colors, green1);
-        color: $white;
-        border-radius: 10px;
-        cursor: pointer;
-        &:hover{
-            background-color: map-get($colors, white1);
-            color: map-get($colors, green1);
-            @include border(1px, solid, green);
-        }
-    } 
-}  
+} 
 @media screen and (min-width:0px) and (max-width:768px){
-    
-    .main__pagcont__contacto{    
-        margin: auto;
-        ul{
-            display: flex;
-            flex-direction: column;
-            font-weight: bold;
-            li{
-                border-bottom: 2px solid black;
-                &:last-child{
-                    border-bottom: none;
+    .main__index{
+        .main__contacto{
+            h1{
+                font-size: 2.25rem;
+            }
+            .main__pagcont__contacto{    
+                margin: auto;
+                height: auto;
+                ul{
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    font-weight: bold;
+                    
+                    li{
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                    }
                 }
             }
+            form{
+                .row{
+                    .col-4{
+                        .contact_form_detail{
+                            width: 60vw;
+                        }
+                    }
+                }
+                .submit_btn{
+                    width: map-get($tamanos, 20vw);
+                }
+            }  
         }
     }
-    form{
-        .row{
-            .col-4{
-                .contact_form_detail{
-                    width: 60vw;
-                }
-            }
-        }
-        .submit_btn{
-            width: map-get($tamanos, 20vw);
-        }
-    }  
 }
