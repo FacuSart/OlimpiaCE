@@ -1,0 +1,10 @@
+[
+    {"nombre":"Creatina", "marca":"Nutrilab", "precio": 1200},
+    {"nombre":"Creatina", "marca":"ENA", "precio": 3000},
+    {"nombre":"Creatina", "marca":"Xbody", "precio": 1500},
+    {"nombre":"Creatina", "marca":"AMZ", "precio": 2000},
+    {"nombre":"Proteina", "marca":"ENA", "precio": 4000},
+    {"nombre":"Proteina", "marca":"Star Nutrition", "precio": 4000},
+    {"nombre":"Proteina", "marca":"Xbody", "precio": 3000},
+    {"nombre":"Proteina", "marca":"ENA X-pro", "precio": 5000}
+]

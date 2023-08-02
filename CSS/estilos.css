@@ -175,6 +175,7 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
 }
 .main__index .main__nos .div_1 .img__nos {
   width: 30vw;
+  height: 50vh;
   box-shadow: 0px 0px 10px rgb(255, 255, 255);
   border-radius: 5px;
 }
@@ -321,10 +322,10 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
   height: auto;
   text-align: center;
 }
-.main__tienda .conteiner-fluid {
-  height: 75vh;
+.main__tienda .conteiner__fluid {
+  min-height: 75vh;
 }
-.main__tienda .conteiner-fluid #prox-text {
+.main__tienda .conteiner__fluid #prox-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,30 +334,30 @@ header .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover
   background-color: rgba(0, 0, 0, 0);
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
-.main__tienda .conteiner-fluid div div img {
+.main__tienda .conteiner__fluid div div img {
   filter: drop-shadow(0px 0px 4px black);
 }
-.main__tienda .conteiner-fluid div div img:hover {
+.main__tienda .conteiner__fluid div div img:hover {
   transition: 0.5s;
   filter: drop-shadow(0px 0px 6px white);
 }
-.main__tienda .conteiner-fluid div div .conteiner .border-radius {
+.main__tienda .conteiner__fluid div div .conteiner .border__radius {
   border-radius: 10px;
 }
-.main__tienda .conteiner-fluid div div .conteiner .button__tienda {
+.main__tienda .conteiner__fluid div div .conteiner .button__tienda {
   background-color: transparent;
   transition: background-color 0.2s linear;
 }
-.main__tienda .conteiner-fluid div div .conteiner .button__tienda:hover {
+.main__tienda .conteiner__fluid div div .conteiner .button__tienda:hover {
   background-color: rgb(4, 163, 4);
 }
-.main__tienda .conteiner-fluid div div .conteiner .button__tienda a {
+.main__tienda .conteiner__fluid div div .conteiner .button__tienda a {
   color: white;
   text-decoration: none;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .main__tienda .conteiner-fluid #prox-text {
+  .main__tienda .conteiner__fluid #prox-text {
     font-size: 2.5rem;
   }
 }

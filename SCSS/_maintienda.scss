@@ -11,9 +11,10 @@
     .main__tienda__navbar{
         height: auto;
         text-align: center;
+        
     }
-    .conteiner-fluid{
-        height: 75vh;
+    .conteiner__fluid{
+        min-height: 75vh;
         #prox-text{
             display: flex;
             justify-content: center;
@@ -34,7 +35,7 @@
                 }
                 
                .conteiner{
-                    .border-radius{
+                    .border__radius{
                         border-radius: 10px;
                     }
                     .button__tienda{
@@ -56,7 +57,7 @@
 }
 @media screen and (min-width:0px) and (max-width:768px){
     .main__tienda{
-        .conteiner-fluid{
+        .conteiner__fluid{
             #prox-text{
                 font-size: 2.5rem;
                 
